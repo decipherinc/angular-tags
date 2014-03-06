@@ -251,6 +251,16 @@
            });
 
            /**
+            * When we blur the text input area, set inactive state
+            */
+           element.bind('blur', function () {
+             scope.$apply(function () {
+                 scope.toggles.inputActive =
+                   false;
+               });
+           });
+
+           /**
             * Detects the delimiter.
             */
            element.bind('keypress',
