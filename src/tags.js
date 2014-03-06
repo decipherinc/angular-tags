@@ -255,9 +255,9 @@
             */
            element.bind('blur', function () {
              scope.$apply(function () {
-                 scope.toggles.inputActive =
-                   false;
-               });
+               scope.toggles.inputActive =
+                 false;
+             });
            });
 
            /**
@@ -483,7 +483,7 @@
                if (angular.isUndefined(value)) {
                  return;
                }
-               if (angular.isString(value)) {
+               if (angular.isString(value) && value !== '') {
                  arr = value
                    .split(scope.options.delimiter)
                    .map(function (item) {
