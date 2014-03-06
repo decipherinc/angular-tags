@@ -254,7 +254,8 @@
             * When we blur the text input area, set inactive state
             */
            element.bind('blur', function () {
-             scope.$apply(function () {
+             $timeout(function () {
+               cancel();
                scope.toggles.inputActive =
                  false;
              });
@@ -289,9 +290,7 @@
                    // or if you want to get out of the text area
                  } else if (kcCancelInput.indexOf(evt.which) >=
                             0 && !evt.isPropagationStopped()) {
-                   cancel();
-                   scope.toggles.inputActive =
-                   false;
+                   element[0].blur();
 
                    // or if you're trying to delete something
                  } else if (kcRemoveTag.indexOf(evt.which) >=
