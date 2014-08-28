@@ -262,6 +262,15 @@
                  }
                });
              });
+             
+          /**
+           * complete tag on blur
+           */
+          element.bind('blur', function (evt) {
+            scope.$apply(function () {
+              addTag(ngModel.$viewValue);
+            });
+          });
 
            /**
             * Inspects whatever you typed to see if there were character(s) of
