@@ -26,7 +26,7 @@ angular.module("templates/tags.html", []).run(["$templateCache", function($templ
     "           data-typeahead-min-length=\"{{typeaheadOptions.minLength}}\"\n" +
     "           data-typeahead-template-url=\"{{typeaheadOptions.templateUrl}}\"\n" +
     "           data-typeahead-wait-ms=\"{{typeaheadOptions.waitMs}}\"\n" +
-    "\n" +
+    "           data-typeahead-append-to-body=\"{{typeaheadOptions.appendToBody}}\"\n" +
     "           data-typeahead-editable=\"{{typeaheadOptions.allowsEditable}}\"\n" +
     "           data-typeahead-on-select=\"add($item) && selectArea() && typeaheadOptions.onSelect()\"/>\n" +
     "\n" +
