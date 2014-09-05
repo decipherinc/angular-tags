@@ -1,9 +1,9 @@
 {
   "name": "angular-tags",
   "version": "0.3.1",
-  "main": "dist/angular-tags-0.3.0.js",
+  "main": "dist/angular-tags-0.3.1-tpls.js",
   "dependencies": {
-    "angular-ui-bootstrap-bower": "~0.6.0",
+    "ui-bootstrap": "~0.11.0",
     "angular": "1.2.0-rc.1",
     "font-awesome": "~3.2.1",
     "bootstrap-css": "~3.0.0"
