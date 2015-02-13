@@ -1,5 +1,7 @@
 # Achtung!
 
+[![Join the chat at https://gitter.im/boneskull/angular-tags](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/boneskull/angular-tags?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > I don't have much time to work on this project and I no longer use it for anything.
 
 > I'd love it if I could work with somebody to get v1.0.0 out the door. I have refactors, bug fixes, and new tests in the pipeline, but there's more work to do.
